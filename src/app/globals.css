@@ -1,28 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #0891B2;
-  --color-secondary: #22D3EE;
-  --color-cta: #22C55E;
-  --color-cta-hover: #16A34A;
-  --color-background: #ECFEFF;
-  --color-foreground: #164E63;
-  --color-glass: rgba(255, 255, 255, 0.7);
-  --color-glass-border: rgba(255, 255, 255, 0.4);
-  --color-glass-button: rgba(255, 255, 255, 0.9);
-  --color-glass-shadow: rgba(0, 0, 0, 0.05);
-  --color-white: #FFFFFF;
-  --font-sans: var(--font-jakarta);
+  --color-primary: #0EA5E9;
+  --color-primary-dark: #0284C7;
+  --color-primary-light: #38BDF8;
+  --color-secondary: #0F172A;
+  --color-cta: #F97316;
+  --color-cta-hover: #EA6C0A;
+  --color-background: #F0F9FF;
+  --color-surface: #FFFFFF;
+  --color-foreground: #0C4A6E;
+  --color-foreground-muted: #334155;
+  --color-foreground-subtle: #64748B;
+  --color-border: #E2E8F0;
+  --color-dark-bg: #0F172A;
+  --color-dark-surface: #1E293B;
+  --color-dark-border: #334155;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
 }
 
 :root {
-  --background: #ECFEFF;
-  --foreground: #164E63;
+  --background: #F0F9FF;
+  --foreground: #0C4A6E;
+}
+
+p, li, span {
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: var(--font-body);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
