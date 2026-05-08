@@ -8,7 +8,10 @@ const CTASection = () => (
   >
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-8">
-        <span className="w-2 h-2 rounded-full bg-primary-light animate-pulse" aria-hidden="true" />
+        <span
+          className="w-2 h-2 rounded-full bg-primary-light animate-pulse"
+          aria-hidden="true"
+        />
         <span className="text-xs font-semibold uppercase tracking-widest text-white">
           Free Trial Available
         </span>
@@ -21,9 +24,9 @@ const CTASection = () => (
         Ready to modernise your school&apos;s operations?
       </h2>
       <p className="text-lg text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-        Join schools across Nigeria that have eliminated paper-based result processing
-        and given parents real-time access to their children&apos;s performance.
-        Set up your entire school in under 30 minutes.
+        Join schools across Nigeria that have eliminated paper-based result
+        processing and given parents real-time access to their children&apos;s
+        performance. Set up your entire school in under 30 minutes.
       </p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -50,10 +53,10 @@ const CTASection = () => (
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
         {[
           { value: "30 min", label: "Average school setup time" },
-          { value: "0 paper", label: "Required after onboarding" },
+          { value: "0 paper", label: "Paperless school operations" },
           { value: "100%", label: "Mobile — iOS & Android" },
         ].map((stat) => (
-          <div key={stat.label} className="text-center">
+          <div key={stat.label} className="text-center text-white">
             <p
               className="text-3xl font-bold text-white mb-1"
               style={{ fontFamily: "var(--font-heading)" }}
